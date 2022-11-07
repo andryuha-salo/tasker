@@ -44,7 +44,7 @@
 		
 		function parseTasks(input) {
 		  input = input.replace(/\n/g, " ").replace(/\t/g, " ").replace(/Task/g, "").replace(/Bug/g, "");
-		  let tasksNumbers = [...input.matchAll("SEARCH-[0-9]+")];
+		  let tasksNumbers = [...input.matchAll("[A-Z]+-[0-9]+")];
 		  return tasksNumbers.map(function(value, index) {
 			  let taskNumber = value[0];
 			  let next = tasksNumbers[index+1];
