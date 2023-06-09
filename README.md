@@ -1,2 +1,2 @@
 # tasker
-https://markovichecha.github.io/tasker/
+https://andryuha-salo.github.io/tasker/
