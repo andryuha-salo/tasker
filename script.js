@@ -55,7 +55,10 @@ function shuffle() {
 	let outputBox = document.getElementById("output");
 	outputBox.value = output;
 
-	navigator.clipboard.writeText(output)
+	navigator.clipboard.writeText(output).then(
+	  () => {},
+	  () => {}
+	);
 }
 
 function loadPeople() {
