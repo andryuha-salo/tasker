@@ -23,8 +23,8 @@ function parseTasks(input) {
 			endIndex = input.indexOf(next);
 		}
 		return [
-		  taskNumber,
-		  input.substring(startIndex, endIndex).trim()
+			taskNumber,
+			input.substring(startIndex, endIndex).trim()
 		]
 	})
 }
@@ -54,6 +54,8 @@ function shuffle() {
 
 	let outputBox = document.getElementById("output");
 	outputBox.value = output;
+
+	navigator.clipboard.writeText(output)
 }
 
 function loadPeople() {
